@@ -17,7 +17,7 @@ browserify -t stylusify entry.js
 ```js
 var style = require('./style.styl')
 console.log(typeof style, style)
-// => string, body { background-color : pink }
+// => string, body {  background-color: #ffc0cb;} 
 ```
 
 enjoy

@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R nyan -w --check-leaks"
+    "test": "mochify --transform . --node"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "stylus": "^0.50.0"
   },
   "devDependencies": {
-    "browserify": "^9.0.3"
+    "browserify": "^9.0.3",
+    "mochify": "^2.6.0"
   }
 }
