@@ -1,0 +1,27 @@
+{
+  "name": "stylusify",
+  "version": "1.0.0",
+  "description": "Browserify transform to require stylus files",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R nyan -w --check-leaks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asbjornenge/stylusify.git"
+  },
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+    "stylus"
+  ],
+  "author": "Asbjorn Enge <asbjorn@hanafjedle.net>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/asbjornenge/stylusify/issues"
+  },
+  "homepage": "https://github.com/asbjornenge/stylusify"
+}
