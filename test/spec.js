@@ -8,3 +8,8 @@ it('allows you to require stylus files', function() {
 it('correctly escapes css string', function() {
     assert(style.indexOf('url(\"') > 0)
 })
+
+it('can inline images', function() {
+    console.log(style)
+    assert(style.indexOf('base64') > 0)
+})

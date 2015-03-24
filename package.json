@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mochify --transform . --node"
+    "test": "mochify --transform [. --inline-images] --node -w -R nyan"
   },
   "repository": {
     "type": "git",
