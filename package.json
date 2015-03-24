@@ -1,6 +1,6 @@
 {
   "name": "stylusify",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Browserify transform to require stylus files",
   "main": "index.js",
   "directories": {
