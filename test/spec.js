@@ -10,6 +10,5 @@ it('correctly escapes css string', function() {
 })
 
 it('can inline images', function() {
-    console.log(style)
     assert(style.indexOf('base64') > 0)
 })
