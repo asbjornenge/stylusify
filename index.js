@@ -1,5 +1,6 @@
 var transformTools = require('browserify-transform-tools')
 var stylus         = require('stylus')
+var esc            = require('js-string-escape')
 
 module.exports = transformTools.makeStringTransform(
     "stylusify", 
@@ -9,7 +10,7 @@ module.exports = transformTools.makeStringTransform(
     function (content, opts, done) {
         stylus(content).render(function(err, css) {
             if (err) { return done(err) }
-            return done(null, 'module.exports="'+css.replace(/\n/g,'')+'"')
+            return done(null, 'module.exports="'+esc(css)+'"')
         })
     }
 )
