@@ -24,9 +24,14 @@ console.log(typeof style, style)
 
 ```sh
 browserify -t [stylusify --inline-images] entry.js    // url(yolo.png) => url("data:image/png;base64,iVBOR...")
+browserify -t [stylusify --autoprefix] entry.js       // display: -ms-flexbox 
 ```
 
 ## Changelog
+
+### 2.1.0
+
+* Added support for [autoprefixer](https://github.com/jenius/autoprefixer-stylus)
 
 ### 2.0.0
 

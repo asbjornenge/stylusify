@@ -12,3 +12,7 @@ it('correctly escapes css string', function() {
 it('can inline images', function() {
     assert(style.indexOf('base64') > 0)
 })
+
+it('can autoprefix', function() {
+    assert(style.indexOf('-ms-flexbox') > 0)
+})
